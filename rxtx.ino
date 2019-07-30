@@ -28,18 +28,19 @@ void loop()
 {
   
   digitalWrite(6,HIGH);
+  bleSerial.print("A");
   delay(500);
   digitalWrite(6,LOW);
   delay(500); // show splash for 3s
   digitalWrite(18,HIGH);
   digitalWrite(17,HIGH);
+  bleSerial.print("B");
   delay(500);
   digitalWrite(17,LOW);
   digitalWrite(18,LOW);
   delay(500); // show splash for 3s
-
+  bleSerial.print("C");
 }
-
 
 
 
